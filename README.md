@@ -1,5 +1,5 @@
 # redirect-fuzzer
-Fuzzing script for redirect URL validator
+Fuzzing script for OAuth redirect URL validator
 
 ## Usage
 
@@ -8,7 +8,9 @@ usage: fuzz.py [-h] [-u URL] [--cookie-file FILE] [--endpoint URL]
                [--client-id ID] [--redirect-uri URL] [--interval SECONDS]
                [--verbose]
 
-Online URL Validator Fuzzer.
+OAuth `redirect_url` Validator Fuzzer. It was released during my presentation at BlackHat Asia 2019. 
+
+Whitepaper and slides: https://www.blackhat.com/asia-19/briefings/schedule/#make-redirection-evil-again---url-parser-issues-in-oauth-13704
 
 optional arguments:
   -h, --help          show this help message and exit

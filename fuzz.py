@@ -383,9 +383,9 @@ if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser(description='Online URL Validator Fuzzer.')
 	advanced = parser.add_argument_group('advanced options')
-	parser.add_argument('-u', '--url', type=str, dest='url',
+	parser.add_argument('-u', '--url', type=str, dest='url', required=True,
 	                    help='Full request URL')
-	parser.add_argument('--cookie-file', dest='cookie_fp', type=argparse.FileType('r'),
+	parser.add_argument('-c', '--cookie-file', dest='cookie_fp', type=argparse.FileType('r'), required=True,
 	                    help='File containing raw Cookie header string', metavar='FILE')
 	advanced.add_argument('--endpoint', type=str, dest='endpoint',
 	                    help='Specify authorize endpoint', metavar='URL')
